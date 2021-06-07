@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="styles.css" media="screen and (min-width:481px)"/>
+	<link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="icon" type="image/png" href="imagenes/Home/favicon.png" />
+
+</head>
+
+<body>
+    <header>
+
+        <div class="header-content">
+            <div class="header-top">
+
+                <div class="title-col-1">
+                    <h1><a href="index.html">Leipzig</a></h1>
+                </div>
+
+                <div class="title-col-2">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" id="index">Inicio</a></li>
+                            <li><a href="itinerario.html" id="toDo">Qué hacer</a></li>
+                            <li><a href="eventos.html" id="events">Eventos</a></li>
+                            <li><a href="#" class="selected" id="reservations">Reservas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="book">
+
+        <form action="http://recursos.grodriguez.com.ar/FORM/" method="post"
+            enctype="application/x-www-form-urlencoded">
+            <div class="form-container">
+
+                <h2 id="reservas">¡Reservá tu entrada aquí!</h2>
+                
+                <div class="form-item"> 
+                    <label>Fecha</label>
+                    <input type="date" name="date" max="2022-12-30" required="" style="width: 151px;" />                
+                </div>
+
+                <div class="form-item">
+                    <label >Horario</label>
+                    <input type="time" name="time" />
+                </div>
+
+                <div class="form-item">
+                    <label for="event">¿Qué evento deseas reservar?</label>
+                    <select id="event" name="event" >
+                        <option value="selecciona" disabled selected>Seleccioná un evento</option>
+                        <option value="bach">Bachfest Leipzig</option>
+                        <option value="gotik">Wave-Gotik-Treffen</option>
+                        <option value="highfield">Highfield</option>
+                        <option value="jazz">Leipziger Jazztage</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="event">¿Tenés un cupón de descuento?</label>
+                    <input type="file" name="attached" accept=".pdf,.jpg,.png" multiple />
+                </div>
+
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div class="form-item">
+                        <label>Nombre</label>
+                        <input type="text" name="name" required/>
+                    </div>
+
+                    <div class="form-item">
+                        <label >Apellido</label>
+                        <input type="text" name="last-name" required/>
+                    </div>
+
+                    <div class="form-item">
+                        <label>Correo electrónico</label>
+                        <input type="email" name="mail" required />
+                    </div>
+
+                    <div class="form-item">
+                        <label>¿Desea recibir informacion acerca de Leipzig?</label>
+                        <label id="radio-button">Sí
+                            <input type="radio" name="send-info" value="si" />
+                        </label>
+                        <label id="radio-button">No
+                            <input type="radio" name="send-info" value="no" />
+                        </label>
+                    </div>
+                </fieldset>
+                <button class="button">Enviar</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footer-row-1">
+            <div class="footer-col">
+                <h3 id="leipzig">Leipzig</h3>
+                <ul class="social-media">
+                    <li ><a class="instagram" href="https://www.instagram.com/leipzigtravel/?hl=es" target="_blank">Instagram</a></li>
+                    <li ><a class="twitter" href="https://twitter.com/leipzigtravel" target="_blank">Twitter</a></li>
+                    <li ><a class="facebook" href="https://www.facebook.com/leipzigtravel" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <div>
+                    <h3>Contenido</h3>
+                    <ul>
+                        <li><a href="index.html ">Inicio</a></li>
+                        <li><a href="itinerario.html">Qué hacer</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="#" class="selected">Reservas</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <div>
+                    <h3>Legales</h3>
+                    <ul>
+                        <li>Términos de uso</li>
+                        <li>Acuerdos de Licencia</li>
+                        <li>Política de privacidad</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <div>
+                    <h3>Datos</h3>
+                    <ul>
+                        <li>Florencia Fernández Bugna</li>
+                        <li>Maquetado y desarrollo web</li>
+                        <li>Mabel García</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-row-2">
+            <p>&copy; Este sitio es una entrega para un <abbr title="Trabajo Práctico">TP</abbr> de la Escuela Da Vinci</p>
+        </div>
+    </footer>
+</body>
+
+</html>

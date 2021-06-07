@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krona One', sans-serif;
+}
+
+h2 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    line-height: 0.75em;
+    padding: 1.5em;
+}
+
+h3 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+p {
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.75em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#open-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 1em;
+    background-color: aqua;
+}
+
+#open-close li a {
+    background: url("menuu.png") no-repeat;
+    background-size: cover;
+    display: block;
+    margin: 10px 20px;
+    font-size: 0px;
+    width: 30px;
+    height: 30px;
+}
+h1 {
+    display: inline-block;
+}
+
+#menu {
+    display: none;
+}
+
+#open, #close {
+    float: right;
+}
+
+#close {
+    display: none;
+}
+
+#nav:target #close {
+    display: block;
+}
+
+#nav:target #open {
+    display: none;
+}
+
+#nav:target #menu {
+    display: block;
+}
+
+/* POR QUE HACER DEPORTE */
+#about {
+background-color: #FDCA40;
+margin-top: 1em;
+}
+
+#sleep h3 {
+    margin: auto;
+    background: url(./1x/Recurso\ 1.png) no-repeat;
+    background-position: 50% 125%;
+    border-top: 177px solid transparent;
+}
+
+#about article {
+    background-color: white;
+    width: 290px;
+    height: 325px;
+    margin: auto;
+    border-radius: 1em;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.2);
+}
+
+#about article p {
+    width: 175px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#stress h3 {
+    margin: auto;
+    background: url(./1x/Recurso\ 2.png) no-repeat;
+    background-position: 50% 125%;
+    border-top: 177px solid transparent;
+}
+
+#heart-health h3 {
+    margin: auto;
+    background: url(./1x/Recurso\ 3.png) no-repeat;
+    background-position: 50% 125%;
+    border-top: 177px solid transparent;
+}
+
+#about-galery {
+    text-align: center;
+    line-height: 0.75em;
+    padding: 0.75em;
+}
+
+#about-galery li {
+    margin: auto;
+    display:inline;
+    padding-left:3px;
+}
+
+#about-galery a {
+    width: 13px;
+    height: 13px;
+    background-size: cover;
+    font-size: 0;
+    display: inline-block;
+    background: url(./1x/Recurso\ 6.png) no-repeat;
+}
+
+#about article {
+    display: none;
+}
+
+#sleep:target {
+    display: block;
+}
+
+#sleep:target > {
+    display: block;
+}
+
+#a-sleep:target {
+    background: url(./1x/Recurso\ 5.png) no-repeat;
+}
+
+#stress:target {
+    display: block;
+}
+
+#heart-health:target {
+    display: block;
+}

@@ -1,0 +1,161 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: purple;
+            height: 4em;
+            line-height: 4em;
+            text-align: center;
+            color: white;
+        }
+
+        h2,
+        p {
+            margin: 1em;
+            line-height: 1.5em;
+        }
+
+        #hamburguesa li:last-child {
+            display: none;
+        }
+
+        #barra {
+            display: none;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        nav:target #barra {
+            display: block;
+        }
+
+        nav:target #hamburguesa li:first-child {
+            display: none;
+        }
+
+        nav:target #hamburguesa li:last-child {
+            display: block;
+        }
+
+        #hamburguesa li {
+            list-style: none;
+            text-indent: -100px;
+            overflow: hidden;
+            margin-top: .75em;
+            width: 2.5em;
+        }
+
+        #hamburguesa li a {
+            background: url("menu-hamburguesa.jpg") no-repeat center center;
+            background-size: cover;
+            display: block;
+            height: 2.5em;
+        }
+
+        #barra {
+            width: 100%;
+            position: absolute;
+            top: 4em;
+            left: 0;
+            background: #F36;
+        }
+
+        #barra li {
+            list-style: none;
+            margin: 1em;
+        }
+
+        #barra li a {
+            text-decoration: none;
+            display: block;
+            background-color: #F9F;
+            color: black;
+            text-align: center;
+            line-height: 2em;
+        }
+        #contenido {
+            top: 0;
+            padding-top: 1px;
+            position: relative;
+            z-index: 100;
+        }
+        nav:target ~ #contenido  {
+            top: 10em;
+            transition: top .5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Menú responsive</h1>
+    </header>
+    <nav id="menu">
+        <ul id="hamburguesa">
+            <li><a href="#menu">Abrir</a></li>
+            <li><a href="#">Cerrar</a></li>
+        </ul>
+        <ul id="barra">
+            <li><a href="#uno">Botón UNO</a></li>
+            <li><a href="#dos">Botón DOS</a></li>
+            <li><a href="#tres">Botón TRES</a></li>
+        </ul>
+    </nav>
+
+    <div id="contenido">
+        <section id="uno">
+            <h2>Título de la sección</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit delectus saepe eaque voluptates
+                obcaecati, et consequuntur modi consequatur, rerum non cupiditate nam explicabo hic qui. Iste natus
+                reiciendis sint?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit delectus saepe eaque voluptates
+                obcaecati, et consequuntur modi consequatur, rerum non cupiditate nam explicabo hic qui. Iste natus
+                reiciendis sint?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit delectus saepe eaque voluptates
+                obcaecati, et consequuntur modi consequatur, rerum non cupiditate nam explicabo hic qui. Iste natus
+                reiciendis sint?</p>
+        </section>
+        <section id="dos">
+            <h2>Título de la sección</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit delectus saepe eaque voluptates
+                obcaecati, et consequuntur modi consequatur, rerum non cupiditate nam explicabo hic qui. Iste natus
+                reiciendis sint?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit delectus saepe eaque voluptates
+                obcaecati, et consequuntur modi consequatur, rerum non cupiditate nam explicabo hic qui. Iste natus
+                reiciendis sint?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit delectus saepe eaque voluptates
+                obcaecati, et consequuntur modi consequatur, rerum non cupiditate nam explicabo hic qui. Iste natus
+                reiciendis sint?</p>
+        </section>
+        <section id="tres">
+            <h2>Título de la sección</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit delectus saepe eaque voluptates
+                obcaecati, et consequuntur modi consequatur, rerum non cupiditate nam explicabo hic qui. Iste natus
+                reiciendis sint?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit delectus saepe eaque voluptates
+                obcaecati, et consequuntur modi consequatur, rerum non cupiditate nam explicabo hic qui. Iste natus
+                reiciendis sint?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit delectus saepe eaque voluptates
+                obcaecati, et consequuntur modi consequatur, rerum non cupiditate nam explicabo hic qui. Iste natus
+                reiciendis sint?</p>
+        </section>
+    </div>
+</body>
+
+</html>
