@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Prompt:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Prompt:wght@300;400&display=swap"
+        rel="stylesheet">
+    <script src="jquery.min.js"></script>
     <title>ONDA FIT</title>
 </head>
+
 <body>
     <header>
         <nav id="nav">
@@ -30,86 +34,89 @@
     <main>
         <section id="about">
             <h2>¿Por qué hacer deporte?</h2>
-            <!-- <article id="card-about"> -->
-                <article id="sleep">
-                    <h3>Sueño reparador</h3>
-                    <p>Al empezar a hacer ejercicio de manera regular, probablemente tambien corregirás tu rutina de sueño. El ejercicio puede ayudarte a dormir mejor y mas tiempo</p>
-                </article>
+            <article id="sleep">
+                <h3>Sueño reparador</h3>
+                <p>Al empezar a hacer ejercicio de manera regular, probablemente tambien corregirás tu rutina de sueño.
+                    El ejercicio puede ayudarte a dormir mejor y mas tiempo</p>
+            </article>
 
-                <article id="stress">
-                    <h3>Menos estrés</h3>
-                    <p>El ejercicio te ayudará a despejar la mente y aliviar el estrés.</p>
-                </article>
+            <article id="stress">
+                <h3>Menos estrés</h3>
+                <p>El ejercicio te ayudará a despejar la mente y aliviar el estrés.</p>
+            </article>
 
-                <article id="heart-health">
-                    <h3>Salud cardíaca</h3>
-                    <p>El ejercicio reduce la presión arterial, eleva el colesterol-HDL (colesterol bueno), reduce los triglicéridos </p>
-                </article>
-                
-                <ul id="about-galery">
-                    <li><a id="a-sleep" href="#sleep">Sueño reparador</a></li>
-                    <li><a href="#stress">Menos estrés</a></li>
-                    <li><a href="#heart-health">Salud cardíaca</a></li>
-                </ul>
-            <!-- </article> -->
+            <article id="heart-health">
+                <h3>Salud cardíaca</h3>
+                <p>El ejercicio reduce la presión arterial, eleva el colesterol-HDL (colesterol bueno), reduce los
+                    triglicéridos </p>
+            </article>
+
+            <ul id="about-galery" class="galery">
+                <li><a id="a-sleep" href="#sleep">Sueño reparador</a></li>
+                <li><a id="a-stress" href="#stress">Menos estrés</a></li>
+                <li><a id="a-heart-health" href="#heart-health">Salud cardíaca</a></li>
+            </ul>
         </section>
         <section>
-            <div id="class">
+            <section id="class">
                 <h2>Encontrá tu clase ideal</h2>
-                <div id="crossfit">
+                <article id="crossfit">
                     <h3>Crossfit</h3>
-                    <figure></figure> 
-                    <figcaption></figcaption>
-                </div>
-                <div id="functional">
+                    <p>Uno de los principales beneficios de hacer crossfit es que ayuda a eliminar grasa.</p>
+                </article>
+                <article id="functional">
                     <h3>Functional</h3>
-                    <figure></figure> 
-                    <figcaption></figcaption>
-                </div>
-                <div id="cardio">
+                    <p>Intervalos de alta intensidad para estimular los músculos y que estos se hagan más fuertes y más grandes.</p>
+                </article>
+                <article id="cardio">
                     <h3>Cardio</h3>
-                    <figure></figure> 
-                    <figcaption></figcaption>
-                </div>
-                <div id="zumba">
+                    <p>Mejora la movilidad articular y muscular. Devuelve al cuerpo agilidad y aumenta la capacidad de movimiento.</p>
+                </article>
+                <article id="zumba">
                     <h3>Zumba</h3>
-                    <figure></figure> 
-                    <figcaption></figcaption>
-                </div>
-                <ul id="class-galery">
+                    <p>Aporta beneficios a nuestra parte congnitiva y emocional.</p>
+                </article>
+                <ul id="class-galery" class="galery">
                     <li><a href="#crossfit">Crossfit</a></li>
                     <li><a href="#functional">Functional</a></li>
                     <li><a href="#cardio">Cardio</a></li>
                     <li><a href="#zumba">Zumba</a></li>
                 </ul>
-            </div>
+            </section>
         </section>
         <aside id="online">
 
         </aside>
         <section id="nutrition">
             <h2>Nutrición</h2>
-            <div id="calcio">
-                <h3>Calcio</h3>
-                <p>Contracción del músculo. Fuentes: lácteos y derivados, frutas y verduras</p>
-            </div>
-            <div id="hierro">
-                <h3>Hierro</h3>
-                <p>Transporte de oxígeno. Fuentes: Carnes rojas, legumbres, huevo, hígado</p>
-            </div>
-            <div id="sodio">
-                <h3>Sodio</h3>
-                <p>Equilibrio hídrico</p>
-            </div>
-            <div id="Potasio">
-                <h3>Potasio</h3>
-                <p>Eliminación de toxinas y transporte de impulsos nerviosos. Fuente: frutas y verduras</p>
-            </div>
-            <div id="magnesio">
-                <h3>Magnesio</h3>
-                <p>Relajador corporal por excelencia. Fuentes: frutas y verduras</p>
-            </div>
-            <ul id="nutrition-galery">
+            <ul id="slide">
+                <article id="calcio" class ="azul">
+                    <h3>Calcio</h3>
+                    <p>Contracción del músculo. Fuentes: lácteos y derivados, frutas y verduras</p>
+                </article>
+
+                <article id="hierro">
+                    <h3>Hierro</h3>
+                    <p>Transporte de oxígeno. Fuentes: Carnes rojas, legumbres, huevo, hígado</p>
+                </article>
+
+                <article id="sodio" class ="azul">
+                    <h3>Sodio</h3>
+                    <p>Equilibrio hídrico</p>
+                </article>
+
+                <article id="Potasio">
+                    <h3>Potasio</h3>
+                    <p>Eliminación de toxinas y transporte de impulsos nerviosos. Fuente: frutas y verduras</p>
+                </article>
+
+                <article id="magnesio" class ="azul">
+                    <h3>Magnesio</h3>
+                    <p>Relajador corporal por excelencia. Fuentes: frutas y verduras</p>
+                </article>
+            </ul>
+
+            <ul id="nutrition-galery" class="galery">
                 <li><a href="#calcio">Crossfit</a></li>
                 <li><a href="#hierro">Functional</a></li>
                 <li><a href="#sodio">Cardio</a></li>
@@ -129,7 +136,7 @@
                 <h3>Belgrano</h3>
                 <p>Av. Cabildo 500, Capital federal</p>
             </div>
-            <ul id="venues-galery">
+            <ul id="venues-galery" class="galery">
                 <li><a href="#calcio">Crossfit</a></li>
                 <li><a href="#hierro">Functional</a></li>
             </ul>
@@ -137,28 +144,29 @@
         <section>
             <h2>Contactanos</h2>
             <form action="">
-                <div class="form-item"> 
+                <div class="form-item">
                     <label for="name">Nombre</label>
-                    <input type="text">               
+                    <input type="text">
                 </div>
-                <div class="form-item"> 
+                <div class="form-item">
                     <label for="phoneNumber">Teléfono</label>
-                    <input type="number">               
+                    <input type="number">
                 </div>
-                <div class="form-item"> 
+                <div class="form-item">
                     <label for="mail">Correo</label>
-                    <input type="email">               
+                    <input type="email">
                 </div>
-                <div class="form-item"> 
+                <div class="form-item">
                     <label for="message">Mensaje</label>
-                    <input type="text">               
+                    <input type="text">
                 </div>
                 <button class="button">Enviar</button>
             </form>
         </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
