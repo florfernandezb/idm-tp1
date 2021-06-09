@@ -171,6 +171,7 @@ h1 {
 
 /******************************* CLASES *******************************/
 #class {
+    background-color: #2B2D42;
     height: 440px;
 }
 
@@ -216,18 +217,18 @@ h1 {
 }
 
 #crossfit {
-    background-image: url(./1x/Recurso\ 7.png);
+    background-image: url(./1x/Recurso\ 7.jpg);
 }
 
 #functional {
-    background-image: url(./1x/Recurso\ 8.png);
+    background-image: url(./1x/Recurso\ 8.jpg);
 }
 
 #cardio {
     background-image: url(./1x/Recurso\ 9.png);
 }
 #zumba {
-    background-image: url(./1x/Recurso\ 10.png);
+    background-image: url(./1x/Recurso\ 10.jpg);
 }
 
 #functional, #cardio, #zumba {
@@ -269,4 +270,8 @@ h1 {
     background: url(./1x/Recurso\ 11.png) no-repeat;
     background-position: 50% 125%;
     border-top: 177px solid transparent;
+}
+
+#class-galery a{
+    background: url(./1x/Recurso\ 12.png) no-repeat;
 }
