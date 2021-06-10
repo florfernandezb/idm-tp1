@@ -383,6 +383,11 @@ header {
 }
 
 /******************************* INFO *******************************/
+
+#info {
+    height: 30em;
+}
+
 #info h3 {
     color: #2B2D42;
     margin-top: 1em
@@ -394,6 +399,7 @@ header {
     background-color: #F8F4F9;
     position: absolute;
     padding-bottom: 1em;
+    margin-top: 1em;
 }
 
 #info article picture {
@@ -422,22 +428,27 @@ article a {
     font-size: 0.7em;
 }
 
-#info ul:last-child {
+/* Se oculta la informacion adicional */
+#info article .more-info {
     display: none;
 }
 
+/* Se oculta VER MENOS en el estado inicial*/
 #info div ul:first-child li:last-child {
     display: none;
 }
 
-#info div:target ul:last-child {
-    display: block;
+/* Se muestra la informacion adicional */
+#info div:target .more-info {
+    display: block !important;
 }
 
-#info div:target li:first-child {
+/* Se oculta VER MAS cuando se despliega la informacion */
+#info div:target ul:first-child li:first-child {
     display: none;
 }
 
+/* VER MENOS se visualiza cuando el div está en target*/
 #info div:target li:last-child {
     display: block !important;
 }
@@ -449,6 +460,28 @@ article a {
     padding-top: 0;
 }
 
-.more-info li:first-child {
+.more-info {
     margin-top: 1em;
+    z-index: 2;
 }
+
+#info-galery {
+    position: absolute;
+    margin-top: -6.5em;
+    z-index: 0;
+}
+
+.info-card {
+    display: none;
+}
+
+#hidratacion {
+    display: block;
+}
+
+#info article:target {
+    display: block;
+}
+
+/******************************* INFO *******************************/
+

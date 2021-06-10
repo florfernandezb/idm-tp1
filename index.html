@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Prompt:wght@300;400&display=swap"
         rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <title>ONDA FIT</title>
 </head>
 
@@ -153,7 +157,7 @@
                 </div>
                
             </article> 
-            <!-- <article id="stretching" class="info-card">
+            <article id="stretching" class="info-card">
                 <picture>
                     <source srcset="./estiramiento-web.jpg" media="(min-width:481px)">
                     <img src="./estiramiento-mobile.jpg" alt="">
@@ -161,11 +165,11 @@
                 <h3>Entrada en calor</h3>
                 <p>Es la encargada de preparar tu cuerpo y tu mente antes del entrenamiento principal, previniendo así una posible lesión</p>
                 <div id="stretching-details" >
-                    <ul id="toggle-stretching-details" class="toggle">
-                        <li id="see-more-stretching" class="open"><a href="#stretching-details">Ver más</a></li>
-                        <li id="see-less-stretching" class="close"><a href="#stretching">Ver menos</a></li>
+                    <ul >
+                        <li><a href="#stretching-details">Ver más</a></li>
+                        <li><a href="#stretching">Ver menos</a></li>
                     </ul>
-                    <ul id="more-stretching" class="more-info">
+                    <ul class="more-info">
                         <li>Permite acelerar la adaptación a nivel respiratorio, circulatorio y metabólico</li>
                         <li>Incrementa la temperatura corporal y muscular.</li>
                         <li>Eleva la capacidad de carga de las articulaciones.</li>
@@ -183,33 +187,92 @@
                 <h3>Potencicación post activación</h3>
                 <p>La PAP (postactivation potentiation) es un método simple que mejora el rendimiento de forma inmediata y a largo plazo.</p>
                 <p>Básicamente, consta de un ejercicio de acondicionamiento, el cual genera una exitación a nivel neuromuscular, potenciando el rendimiento del ejercicio posterior.⁣</p>
-                <div id="stretching-details">
-                    <ul id="toggle-pap-details" class="toggle">
-                        <li id="see-more-pap" class="open"><a href="#pap-details">Ver más</a></li>
-                        <li id="see-less-pap" class="close"><a href="#pap">Ver menos</a></li>
+                <div id="pap-details">
+                    <ul>
+                        <li><a href="#pap-details">Ver más</a></li>
+                        <li><a href="#pap">Ver menos</a></li>
                     </ul>
-                    <ul id="toggle-pap-details" class="toggle">
+                    <ul class="more-info">
                         <li>El 1er ejercicio además de potenciar, genera fatiga, por lo que si el descanso es insuficiente o demasiado largo, el rendimiento no va a mejorar.</li>
-                        <li>A más intensidad/volumen = más descanso⁣
-                            A menos intensidad/volumen = menos descanso
-                        ⁣⁣</li>
+                        <li>A más intensidad/volumen = más descanso⁣</li>
+                        <li> A menos intensidad/volumen = menos descanso</li>
                         <li>Correspondencia biomecánica entre el primer ejercicio de activación y el segundo.
                         </li>
                     </ul>
                 </div>
-            </article> -->
-            <article>
-                <h3></h3>
-                <p></p>
             </article>
-            <article>
+            <article id="harina" class="info-card ocultar">
+                <picture>
+                    <source srcset="./harina-web.jpg" media="(min-width:481px)">
+                    <img src="./harina-mobile.jpg" alt="">
+                </picture>
                 <h3>¿Qué pasa con las harinas?</h3>
-                <p></p>
+                <p>Generalmente cuando nos referimos a las harinas nos referimos a la harina blanca refinada y productos derivados, y generalmente ALTOS también en GRASAS: pizza, empanadas, pan blanco, galletitas, etc.</p>
+                <div id="harina-details">
+                    <ul>
+                        <li><a href="#harina-details">Ver más</a></li>
+                        <li><a href="#harina">Ver menos</a></li>
+                    </ul>
+                    <ul class="more-info">
+                        <li>
+                            Hay que tener en cuenta que no podemos meter a todas las harinas y sus derivados en la misma bolsa. ¿Sabias qué existen un montón de harinas? Las mismas se producen al moler los distintos cereales, legumbres, frutos secos, entre otros.
+                        </li>
+                        <li>Los hidratos de carbono son fundamentales para nuestro organismo. Algunos ejemplos son: pan integral 100%, arroz integral, legumbres, papa, batata, avena, quinoa, y miles más.</li>
+                    </ul>
+                </div>
+                
+                
             </article>
-            <article>
-                <h3>Mitos de la alimentación</h3>
-                <p></p>
+            <article id="pre-training" class="info-card">
+                <picture>
+                    <source srcset="./pre-training-web.jpg" media="(min-width:481px)">
+                    <img src="./pre-training-mobile.jpg" alt="">
+                </picture>
+                <h3>Nutrición pre entrenamiento</h3>
+                <p>Los planes de alimentación en deportistas son muy variados y es importante que sean individualizados teniendo en cuenta un montón de factores propio en cada caso</p>
+                <div id="pre-training-details">
+                    <ul>
+                        <li><a href="#pre-training-details">Ver más</a></li>
+                        <li><a href="#pre-training">Ver menos</a></li>
+                    </ul>
+                    <ul class="more-details">
+                        <li>Consumir alimentos fuente de hidratos de carbono: frutas, panes, arroz, fideos, avena.</li>
+                        <li>Evitar frituras y alimentos muy calóricos y altos en grasas</li>
+                        <li>Disminuir la fibra (alimentos integrales, vegetales).</li>
+                        <li>Elegir proteínas magras: claras de huevo, carnes magras</li>
+                        <li>Arrancar el entrenamiento bien hidratado con agua</li>
+                    </ul>
+                </div>
             </article>
+            <article id="post-training" class="info-card">
+                <picture>
+                    <source srcset="./post-training-web.jpg" media="(min-width:481px)">
+                    <img src="./post-training-mobile.jpg" alt="">
+                </picture>
+                <h3>Nutrición post entrenamiento</h3>
+                <p>Los deportes son muy variados y según las características propias de cada uno, se debe adecuar la alimentación. En cada uno es importante la frecuencia, la intensidad, el tiempo, etc. Todos estos factores son determinantes.</p>
+                <div>
+                    <ul>
+                        <li><a href="#post-training-details">Ver más</a></li>
+                        <li><a href="#post-training">Ver menos</a></li>
+                    </ul>
+                    <ul class="more-info">
+                        <li>Recupera a tu organismo en su totalidad.</li>
+                        <li>Proteínas para reparación muscular: leche, carnes magras, huevo (también pueden ser proteínas vegetales).</li>
+                        <li> Hidratos de carbono de buena calidad para recuperación del glucógeno: papa, batata, legumbres, arroz, fideos, panes integrales, avena. Vitaminas y minerales a través del consumo de frutas y verduras.</li>
+                        <li>Buena hidratación con agua.</li>
+
+                    </ul>
+                </div>
+            </article>
+            <ul id="info-galery" class="galery blue-circle">
+                <li><a href="#hidratacion">Hidratación</a></li>
+                <li><a href="#stretching">Estiramientos</a></li>
+                <li><a href="#pap">Potencicación post activación</a></li>
+                <li><a href="#harina">¿Qué pasa con las harinas?</a></li>
+                <li><a href="#pre-training">Nutrición pre entrenamiento</a></li>
+                <li><a href="#post-training">Nutrición post entrenamiento</a></li>
+            </ul>
         </section>
         <section>
             <h2>Contactanos</h2>
