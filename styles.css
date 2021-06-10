@@ -102,15 +102,15 @@ header {
     height: 30px;
 }
 
-#close {
+.close {
     display: none;
 }
 
-#nav:target #close {
+#nav:target .close {
     display: block;
 }
 
-#nav:target #open {
+#nav:target .open {
     display: none;
 }
 
@@ -382,5 +382,73 @@ header {
     color: #2B2D42;
 }
 
-/******************************* CONTACTO *******************************/
+/******************************* INFO *******************************/
+#info h3 {
+    color: #2B2D42;
+    margin-top: 1em
+}
 
+.info-card {
+    width: 100%;
+    border-radius: 1em;
+    background-color: #F8F4F9;
+    position: absolute;
+    padding-bottom: 1em;
+}
+
+#info article picture {
+    margin-top: 1em;
+}
+
+#info article p {
+    padding: 1em;
+    padding-top: 0.5em;
+}
+
+#info div ul:first-child {
+    margin: auto;
+    width: 40%;
+    background-color: #FDCA40;
+    border-radius: 1em;
+    padding: 0.3em;
+    text-align: center;
+}
+
+article li {
+    line-height: 1em;
+}
+
+article a {
+    font-size: 0.7em;
+}
+
+#info ul:last-child {
+    display: none;
+}
+
+#info div ul:first-child li:last-child {
+    display: none;
+}
+
+#info div:target ul:last-child {
+    display: block;
+}
+
+#info div:target li:first-child {
+    display: none;
+}
+
+#info div:target li:last-child {
+    display: block !important;
+}
+
+.more-info li {
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.75em;
+    padding: 1em;
+    padding-top: 0;
+}
+
+.more-info li:first-child {
+    margin-top: 1em;
+}
