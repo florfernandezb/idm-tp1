@@ -393,6 +393,7 @@ header {
     margin-top: 1em
 }
 
+/* Se ocultan todas las tarjetas en el estado inicial*/
 .info-card {
     width: 100%;
     border-radius: 1em;
@@ -400,6 +401,7 @@ header {
     position: absolute;
     padding-bottom: 1em;
     margin-top: 1em;
+    display: none;
 }
 
 #info article picture {
@@ -420,11 +422,11 @@ header {
     text-align: center;
 }
 
-article li {
+#info article li {
     line-height: 1em;
 }
 
-article a {
+#info article a {
     font-size: 0.7em;
 }
 
@@ -440,7 +442,7 @@ article a {
 
 /* Se muestra la informacion adicional */
 #info div:target .more-info {
-    display: block !important;
+    display: block;
 }
 
 /* Se oculta VER MAS cuando se despliega la informacion */
@@ -448,9 +450,13 @@ article a {
     display: none;
 }
 
-/* VER MENOS se visualiza cuando el div está en target*/
+/* Se muestra VER MENOS cuando el div está en target */
 #info div:target li:last-child {
     display: block !important;
+}
+
+#hidratacion {
+    display: block;
 }
 
 .more-info li {
@@ -467,21 +473,59 @@ article a {
 
 #info-galery {
     position: absolute;
-    margin-top: -6.5em;
+    margin-top: -2em;
     z-index: 0;
-}
-
-.info-card {
-    display: none;
-}
-
-#hidratacion {
-    display: block;
 }
 
 #info article:target {
     display: block;
 }
 
-/******************************* INFO *******************************/
+/******************************* FORM *******************************/
 
+#contact {
+    background-color: #2B2D42;
+    color: #FDCA40;
+}
+
+.form-item label {
+    display: block;
+}
+
+#contact form div:first-child {
+    margin-top: 0;
+}
+
+input {
+    width: 100%;
+    height: 2.5em;
+    border-radius: 1em;
+}
+
+#msg {
+    height: 10em;
+}
+
+.form-item {
+    margin: 1em;
+}
+
+footer {
+    height: 100em;
+}
+
+#contact button {
+    background-color: #FDCA40;
+    color: #2B2D42;
+    margin-left: 6.5em; 
+    margin-bottom: 1em;   
+    width: 50%;
+    height: 2em;
+    border-radius: 1em;
+}
+
+/******************************* FOOTER *******************************/
+
+footer {
+    background-color: #2B2D42;
+}
