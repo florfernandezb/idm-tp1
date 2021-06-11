@@ -1,0 +1,263 @@
+* {
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+}
+
+p {
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 1.87em;
+    padding: 1em;
+}
+
+h3 {
+    font-size: 1.56em;
+}
+
+h1 {
+    width: 15%;
+    height: 15%;
+    margin: 1% 1%;
+    display: inline-block;
+    background-image: url(./recursos/logo-web.png);
+}
+
+.galery {
+    display: none;
+}
+
+/******************************* HEADER *******************************/
+
+#banner-galery {
+    display: inline-block;
+}
+
+#header {
+    height: 58em;
+    width: 100%;
+    background-image: url(./recursos/banner-1-pc.png)
+}
+
+#header:target {
+    
+    background-image: url(./recursos/banner-2-pc.png) ;
+}
+
+#cta-text h2, #cta-text p {
+    display: block;
+}
+
+#nav article p {
+    width: 30%;
+    margin-left: 2em;
+}
+
+#nav article h2 {
+    text-align: left;
+}
+
+#nav button {
+    font-size: 0.8em;
+    width: 8%;
+    margin-left: 2.5em;
+}
+
+.blue-circle a {
+    width: 20px;
+    height: 20px;
+    background-image: url(./recursos/Recurso\ 13-tablet.png);
+}
+
+.blue-circle a:hover {
+    background-image: url(./recursos/Recurso\ 12-tablet.png);
+}
+
+#banner-galery {
+    width: 9%;
+}
+
+.galery li {
+    margin: .2em;
+}
+
+#open-close {
+    display: none;
+}
+
+#menu {
+    display: inline-flex;
+    background: none;
+    width: 55%;
+}
+
+#menu a {
+    font-size: 1em;
+    color: #FF5714;
+}
+
+#menu li {
+    width: 30%;
+}
+
+#menu li:nth-child(2) {
+    margin-left: 7%;
+}
+
+/******************************* POR QUE HACER DEPORTE *******************************/
+
+
+#about {
+    text-align: center;
+    height: 35em;
+}
+
+#about article {
+    width: 20%;
+    height: 70vh;
+    margin: 0 3em;
+}
+
+#about article p {
+    font-size: 1em;
+}
+
+#about article h3 {
+    font-size: 1em;
+}
+
+#sleep:hover {
+    font-size: 1em;
+}
+
+#sleep h3 {
+    border-top: 12em solid transparent;
+}
+
+#stress h3 {
+    border-top: 14em solid transparent;
+}
+
+#heart-health h3 {
+    border-top: 14em solid transparent;
+}
+
+/******************************* CLASES *******************************/
+#class article {
+    display: inline-block;
+    width: 15%;
+    height: 69%;
+    margin: 0 2%;
+}
+
+#class article:target {
+    display: inline-block;
+}
+
+#zumba {
+    display: inline-block;
+}
+
+#crossfit {
+    background-image: url(./recursos/Recurso\ 5-web.png);
+}
+
+#functional {
+    background-image: url(./recursos/Recurso\ 3-web.png);
+}
+
+#cardio {
+    background-image: url(./recursos/Recurso\ 4-web.png);
+}
+#zumba {
+    background-image: url(./recursos/Recurso\ 2-web.png);
+} 
+
+#class {
+    height: 34em;
+}
+
+#class p {
+    font-size: .9em;
+    width: 79%;
+    top: 16em;
+    left: 12%;
+}
+
+#class h3 {
+    top: 14em;
+}
+
+#class a {
+    display: none ;
+}
+
+/******************************* NUTRICION *******************************/
+#nutrition {
+    height: 55em;
+}
+
+#hierro, #sodio, #potasio, #magnesio {
+    display: block;
+}
+
+#nutrition article {
+    position: relative ;
+    width: 40%;
+    left: 0;
+}
+
+#sodio h3 {
+    margin-left: 2.7em;
+    border-right: 12em solid transparent;
+}
+
+#sodio p {
+    top: 4em;
+    left: 14.8em;
+}
+
+#hierro h3, #potasio h3{
+    margin-left: 5.5em;
+}
+
+#magnesio h3 {
+    margin-left: 3em;
+    width: 77%;
+}
+
+#magnesio p {
+    left: 38%;
+}
+
+/******************************* INFO *******************************/
+#info {
+    height: 78em;
+}
+
+#info picture {
+    margin: 0;
+}
+
+.info-card {
+    width: 33%;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    height: 100vh;
+}
+
+#info article:target {
+    display: inline-block;
+    width: 33%;
+}
+
+#info article div:target {
+    background-color: #F8F4F9;
+    z-index: 10;
+    position: relative;
+}
+
+

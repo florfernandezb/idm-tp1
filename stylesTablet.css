@@ -1,15 +1,28 @@
-header {
-    width: 100%;
-    height: 27.4em;
-    background-image: url(./recursos/banner-1-tablet.png)
-}
+/******************************* HEADER *******************************/
+    #header {
+        width: 100%;
+        height: 29.4em;
+        background-image: url(./recursos/banner-1-tablet.png)
+    }
+    
+    #header:target {
+        height: 29.4em;
+        background-image: url(./recursos/banner-2-tablet.png) ;
+    }
 
-header:target {
-    height: 29.4em;
-    background-image: url(./recursos/banner-2-tablet.png) ;
-}
+    h2 {
+        font-size: 1.2em;
+    }
 
-/******************************* ABOUT *******************************/
+    h3, p {
+        font-size: 1em;
+    }
+
+    #cta-text h2, #cta-text p {
+        display: block;
+    }
+
+/******************************* POR QUE HACER DEPORTE *******************************/
 
 #about article {
     width: 32%;
@@ -18,53 +31,113 @@ header:target {
     display: inline-block;
     vertical-align: top;
 }
+#about article p {
+    width: 81%;
+}
 
 #stress, #heart-health {
     display: block;
 }
 
-.galrey {
+#about-galery {
     display: none;
 }
 
-/******************************* CLASS *******************************/
+#about p, #about h3 {
+    font-size: 0.75em;
+}
+
+#nav article {
+    width: 100%;
+}
+
+#nav article h2 {
+    text-align: left;
+}
+
+#nav article p {
+    width: 34%;
+    margin-left: 2em;
+    margin-top: -1.5em;
+}
+
+#nav button {
+    margin-left: 3.5em;
+}
+
+.blue-circle a {
+    width: 22px;
+    height: 22px;
+    background-image: url(./recursos/Recurso\ 13-tablet.png);
+}
+
+.blue-circle a:hover {
+    background-image: url(./recursos/Recurso\ 12-tablet.png);
+}
+
+#banner-galery {
+    width: 19%;
+}
+
+#about article:target, #about article:hover {
+    display: inline-block;
+}
+
+/******************************* CLASES *******************************/
 
 #functional, #crossfit {
     display: block;
     background-repeat: no-repeat;
 }
 
-
 #crossfit {
-    background-image: url(./recursos/crossfit-tablet.png);
+    background: no-repeat url(./recursos/crossfit-tablet.png);
 }
 
 #functional {
-    background-image: url(./recursos/functional-tablet.png);
+    background: no-repeat url(./recursos/functional-tablet.png);
 }
 
 #cardio {
-    background-image: url(./recursos/cardio-tablet.png);
+    background: no-repeat url(./recursos/cardio-tablet.png);
 }
 #zumba {
-    background-image: url(./recursos/Zumba-4-tablet.png);
+    background: no-repeat url(./recursos/Zumba-4-tablet.png);
 } 
 #class {
-    height: 33em;
+    height: 25em;
     text-align: center;
 }
 
 #class article {
     position: relative;
-    width: 40%;
-    height: 26em;
+    width: 24%;
+    height: 17em;
 }
 
-#zumba, #cardio {
+#class p {
+    font-size: 0.7em;
+    width: 84%;
+    top: 16em;
+    left: 10%;
+}
+
+#class h3 {
+    font-size: 0.8em;
+    width: 58%;
+    top: 11em;
+    left: 23%;
+}
+
+#class-galery {
     display: none;
 }
 
-#crossfit, #functional {
+#zumba, #cardio, #functional, #crossfit {
+    display: inline-block;
+}
+
+/* #crossfit, #functional {
     display: inline-block;
 }
 
@@ -73,7 +146,7 @@ header:target {
 }
 #class-galery li:nth-child(odd){
     display: none;
-}
+} */
 
 #class-galery a {
     width: 30;
@@ -85,4 +158,165 @@ header:target {
     background: url(./recursos/Recurso4-tablet.png) no-repeat;
 }
 
+/******************************* NUTRICION *******************************/
 
+#nutrition {
+    height: 17em;
+}
+
+#nutrition article {
+    width: 75%;
+    height: 9em;
+    border-radius: 1em;
+    position: absolute;
+    left: 15%;
+}
+
+#nutrition p, #nutrition h3 {
+    font-size: 1em;
+}
+
+#calcio h3 {
+    height: 10em;
+    line-height: 3em;
+    width: 68%;
+    font-size: 1em;
+    background: url(./recursos/Recurso\ 6-tablet.png) no-repeat;
+    border-top: 1em solid transparent;
+    border-left: 1em solid transparent;
+}
+
+#calcio p {
+    position: absolute;
+    font-size: 1em;
+    top: 3.5em;
+    left: 34%;
+    width: 53%;
+}
+
+#nutrition-galery {
+    top: 135em;
+}
+
+#hierro h3 {
+    height: 10em;
+    width: 84%;
+    line-height: 5em;
+    border-top: 0.5em solid transparent;
+    border-right: 2em solid transparent;
+    margin-left: 5em;
+    background: url(./recursos/Recurso\ 7-tablet.png.) no-repeat right;
+}
+
+#hierro p, #potasio p {
+    top: 4em;
+    left: 14%;
+    width: 53%;
+}
+
+#sodio h3 {
+    background: url(./recursos/Recurso\ 8-tablet.png.) no-repeat;
+    border-top: 1em solid transparent;
+    margin-left: 3.7em;    
+}
+
+#sodio p {
+    position: absolute;
+    left: 50%;
+}
+
+#potasio h3 {
+    background: url(./recursos/Recurso\ 9-tablet.png.) no-repeat right;
+    height: 10em;
+    border-top: 0;
+    border-right: 3em solid transparent;
+    line-height: 6em;
+    margin-left: 5em;
+}
+
+#magnesio h3 {
+    width: 70%;
+    margin-left: 5em;
+    border-bottom: 2em solid transparent;
+    background: url(./recursos/Recurso\ 10-tablet.png.) no-repeat left;
+}
+
+/******************************* SEDES *******************************/
+
+#venues {
+    margin-top: 16em;
+}
+
+#venues p, #venues h3 {
+    font-size: 1em;
+}
+
+/******************************* INFO *******************************/
+
+#info p, #info li, #info h3 {
+    margin: auto;
+    font-size: 1em;
+    width: 70%;
+}
+
+#info img {
+    padding: 2em;
+}
+
+#info picture {
+    margin: 5em;
+}
+
+/******************************* FORM *******************************/
+
+form {
+    width: 80%;
+    margin: auto;
+}
+input[type="submit"] {
+    display: block;
+    width: 30%;
+    margin: auto;
+}
+/******************************* FOOTER *******************************/
+
+footer {
+    font-size: 0.75em;
+}
+
+footer div {
+    margin: 0;
+    width: 33%;
+    margin-top: 2em;
+}
+
+footer ul {
+    margin: auto;
+}
+
+#mapa {
+    margin-left: 16%;
+}
+
+#mapa li:first-child a {
+    background: url(./recursos/Recurso\ 11-web.png) no-repeat;
+    width: 120px;
+    height: 74px;
+}
+
+.redes a {
+    width: 50px;
+    height: 50px;
+}
+
+#ig {
+    background-image: url(./recursos/instagram-icon-web.png);
+}
+
+#tw {
+    background-image: url(./recursos/twitter-icon-web.png);
+}
+
+#fb {
+    background-image: url(./recursos/facebook-icon-web.png);
+}

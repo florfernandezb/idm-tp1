@@ -11,8 +11,11 @@
         rel="stylesheet">
 
 
-    <link rel="stylesheet" href="./stylesTablet.css" media="screen and (min-width:481px) and (max-width:780px" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./stylesTablet.css" media="screen and (min-width:481px) " />
+    <link rel="stylesheet" href="./stylesPc.css" media="screen and (min-width:781px)" />
+
+    <!-- <script src="recursos/jquery_cycle.js"></script> -->
 
     <title>Florencia Fernández Bugna | DWN2A | IDM | 2021</title>
 </head>
@@ -21,7 +24,7 @@
     <header id="header">
         <nav id="nav">
             <h1>ONDA FIT</h1>
-            <article>
+            <article id="cta-text">
                 <h2>Mejorá tu calidad de vida</h2>
                 <p>Practicar algun deporte o realizar
                     alguna actividad física aporta
@@ -75,6 +78,7 @@
         </section>
             <section id="class">
                 <h2>Encontrá tu clase ideal</h2>
+                
                 <article id="crossfit">
                     <h3>Crossfit</h3>
                     <p>Uno de los principales beneficios de hacer crossfit es que ayuda a eliminar grasa.</p>
@@ -166,7 +170,7 @@
             <article id="stretching" class="info-card">
                 <picture>
                     <source srcset="./recursos/estiramiento-web.jpg" media="(min-width:481px)">
-                    <img src="./estiramiento-mobile.jpg" alt="">
+                    <img src="./recursos/estiramiento-mobile.jpg" alt="">
                 </picture>
                 <h3>Entrada en calor</h3>
                 <p>Es la encargada de preparar tu cuerpo y tu mente antes del entrenamiento principal, previniendo así una posible lesión</p>
@@ -188,7 +192,7 @@
             <article id="pap" class="info-card">
                 <picture>
                     <source srcset="./recursos/potenciacion-web.jpg" media="(min-width:481px)">
-                    <img src="./potenciacion-mobile.jpg" alt="">
+                    <img src="./recursos/potenciacion-mobile.jpg" alt="">
                 </picture>
                 <h3>Potencicación post activación</h3>
                 <p>La PAP (postactivation potentiation) es un método simple que mejora el rendimiento de forma inmediata y a largo plazo.</p>
@@ -338,6 +342,18 @@
         
         <p>&copy; Este sitio es una entrega para un TP de la Escuela Da Vinci</p>
     </footer>
+
+    <!-- <script>
+        $('#class-container').cycle({
+			fx: 'scrollLeft',
+			speed: 1000,
+			delay: 500,
+			timeout: 1000,
+			prev: '#ant',
+			next: '#sig',
+			pause: true
+		});
+    </script> -->
 </body>
 
 </html>

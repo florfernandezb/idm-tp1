@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=480, initial-scale=1.0">
+	<title>Leipzig</title>
+	<link rel="stylesheet" href="styles.css" media="screen and (min-width:481px)" />
+	<link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+		rel="stylesheet" />
+	<link rel="icon" type="image/png" href="imagenes/Home/favicon.png" />
+	<script src="res/jquery.min.js"></script>
+	<script src="res/jquery_cycle.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+
+			<div class="header-content">
+				<div class="header-top">
+
+					<div>
+						<h1><a href="index.html">Leipzig</a></h1>
+					</div>
+
+					<div>
+						<nav>
+							<ul>
+								<li><a href="#" class="selected" id="index">Inicio</a></li>
+								<li><a href="itinerario.html" id="toDo">Qué hacer</a></li>
+								<li><a href="eventos.html" id="events">Eventos</a></li>
+								<li><a href="reservas.html" id="reservations">Reservas</a></li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+
+		</header>
+
+		<main>
+
+			<section class="about">
+				<h2>Sobre Leipzig</h2>
+				<p class="section-description"> <strong>
+						Leipzig es la ciudad más grande de los cinco Estados federados
+						que pertenecieron a la extinta <abbr title="República Democrática Alemana">RDA</abbr>
+					</strong></p>
+				<figure>
+					<div>
+						<div class="img-col-1">
+							<picture>
+								<source srcset="imagenes/Mobile/Home/Home_05.jpg" media="(max-width:480px)">
+								<img src="imagenes/Home/home-street.jpg" alt="Imagen de una calle en Leipzig">
+							</picture>
+						</div>
+						<div class="img-col-2">
+
+							<picture>
+								<source srcset="imagenes/Mobile/Home/Home_10.jpg" media="(max-width:480px)">
+								<img src="imagenes/Home/home-galery.jpg" alt="Imagen de un mercado de Leipzig">
+							</picture>
+
+							<picture>
+								<source srcset="imagenes/Mobile/Home/Home_07.jpg" media="(max-width:480px)">
+								<img src="imagenes/Home/home-river.jpg" alt="Imagen del River Weisse Elster en Leipzig">
+							</picture>
+						</div>
+					</div>
+					<figcaption>
+						<p>Ubicada en Sajonia, <em>Leipzig es el <abbr title="principal">ppal</abbr> centro de comercio
+								de Alemania</em>,
+							originalmente fue
+							una ciudad amurallada que se ganó el sobrenombre de Pequeña París en el siglo XIX por ser un
+							centro cultural. La historia de la ciudad está conectada con la música clásica. <em>Tanto
+								Bach
+								como Mendelssohn vivieron en la ciudad durante la cúspide de sus carreras.</em>
+						</p>
+					</figcaption>
+				</figure>
+			</section>
+
+			<section class="home-what-to-do">
+				<h2>¿Qué hacer en Leipzig?</h2>
+				<p>Te presentamos los mejores puntos turísticos <b>para que tu experiencia en Leipzig sea
+						inolvidable</b></p>
+				<div class="wtd-container">
+					<a href="#" id="ant">anterior</a>
+
+					<div id="img-container">
+
+						<picture>
+							<source srcset="imagenes/Mobile/Home/home-volki.jpg" media="(max-width:480px)">
+							<img src="imagenes/Home/home-volki.jpg" alt="Imagen del monumento Völkerschlachtdenkmal">
+						</picture>
+
+						<picture>
+							<source srcset="imagenes/Mobile/Home/home-st-thomas.jpg" media="(max-width:480px)">
+							<img src="imagenes/Home/home-st-thomas.jpg" alt="Imagen de la Iglesia de Santo Tomás">
+						</picture>
+
+						<picture>
+							<source srcset="imagenes/Mobile/Home/home-christmas.jpg" media="(max-width:480px)">
+							<img src="imagenes/Home/home-christmas.jpg"
+								alt="Imagen de la entrada del Market de Leipzig">
+						</picture>
+
+						<picture>
+							<source srcset="imagenes/Mobile/Home/home-gewandhaus.jpg" media="(max-width:480px)">
+							<img src="imagenes/Home/home-gewandhaus.jpg"
+								alt="Imagen de la entrada del Market de Leipzig">
+						</picture>
+
+					</div>
+
+					<a href="#" id="sig"><abbr title="siguiente">siguiente</abbr></a>
+
+				</div>
+			</section>
+
+			<section class="home-events">
+				<h2>¡Entérate de los próximos eventos!</h2>
+				<div>
+					<div class="item-event" id="ballet">
+						<div class="home-events-col">
+							<p class="fecha">05/11</p>
+						</div>
+						<div class="home-events-col-2">
+							<a href="eventos.html#bach">Bachfest Leipzig </a>
+							<p>Festival de música clásica</p>
+						</div>
+						<div class="ver-mas">
+							<a href="eventos.html#bach">ver más</a>
+						</div>
+					</div>
+
+					<div class="item-event" id="gotic">
+						<div class="home-events-col">
+							<p class="fecha">07/11</p>
+						</div>
+						<div class="home-events-col-2">
+							<a href="eventos.html#gotik">Wave-Gotik-Treffen</a>
+							<p>Festival de la cultura gótica</p>
+						</div>
+						<div class="ver-mas">
+							<a href="eventos.html#gotik">ver más</a>
+						</div>
+					</div>
+
+					<div class="item-event" id="rock">
+						<div class="home-events-col">
+							<p class="fecha">11/11</p>
+						</div>
+						<div class="home-events-col-2">
+							<a href="eventos.html#highfield">Festival Highfield</a>
+							<p>Concierto indie rock| Großpösna</p>
+						</div>
+						<div class="ver-mas">
+							<a href="eventos.html#highfield">ver más</a>
+						</div>
+					</div>
+
+					<div class="item-event" id="jazz">
+						<div class="home-events-col">
+							<p class="fecha">20/11</p>
+						</div>
+						<div class="home-events-col-2">
+							<a href="eventos.html#jazz-event">Leipziger Jazztage</a>
+							<p>Concierto de Jazz, Rock y Soul</p>
+						</div>
+						<div class="ver-mas">
+							<a href="eventos.html#jazz-event">ver más</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer>
+			<div class="footer-row-1">
+				<div class="footer-col">
+					<h3 id="leipzig">Leipzig</h3>
+					<ul class="social-media">
+						<li><a class="instagram" href="https://www.instagram.com/leipzigtravel/?hl=es"
+								target="_blank">Instagram</a></li>
+						<li><a class="twitter" href="https://twitter.com/leipzigtravel" target="_blank">Twitter</a></li>
+						<li><a class="facebook" href="https://www.facebook.com/leipzigtravel"
+								target="_blank">Facebook</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<div style="margin-left: 20px">
+						<h3>Contenido</h3>
+						<ul>
+							<li><a href="#" class="selected">Inicio</a></li>
+							<li><a href="itinerario.html">Qué hacer</a></li>
+							<li><a href="eventos.html">Eventos</a></li>
+							<li><a href="reservas.html">Reservas</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-col">
+					<div>
+						<h3>Legales</h3>
+						<ul>
+							<li>Términos de uso</li>
+							<li>Acuerdos de Licencia</li>
+							<li>Política de privacidad</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-col">
+					<div>
+						<h3>Datos</h3>
+						<ul>
+							<li>Florencia Fernández Bugna</li>
+							<li>Maquetado y desarrollo web</li>
+							<li>Mabel García</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-row-2">
+				<p>&copy; Este sitio es una entrega para un <abbr title="Trabajo Práctico">TP</abbr> de la Escuela Da
+					Vinci</p>
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		$('#img-container').cycle({
+			fx: 'scrollLeft',
+			speed: 1000,
+			delay: 500,
+			timeout: 1000,
+			prev: '#ant',
+			next: '#sig',
+			pause: true
+		});
+		$('#img-container-mobile').cycle({
+			fx: 'scrollLeft',
+			speed: 1000,
+			delay: 500,
+			timeout: 1000,
+			prev: '#ant',
+			next: '#sig',
+			pause: true
+		});
+	</script>
+</body>
+
+</html>
