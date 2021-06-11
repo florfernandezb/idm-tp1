@@ -14,13 +14,18 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-    <title>ONDA FIT</title>
+    <title>Florencia Fernández Bugna | DWN2A | IDM | 2021</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav id="nav">
             <h1>ONDA FIT</h1>
+            <button ><a href="#about">Ver más</a></button>
+            <ul id="banner-galery" class="galery blue-circle">    
+                <li><a href="#header">siguiente</a></li>
+                <li><a href="#">anterior</a></li>
+            </ul>
             <ul id="open-close">
                 <li class="open"><a href="#nav">Abrir</a></li>
                 <li class="close"><a href="#">Cerrar</a></li>
@@ -125,13 +130,7 @@
                 <li><a href="#magnesio">Magnesio</a></li>
             </ul>
         </section>
-        <section id="venues">
-            <h2>Nuestras sedes</h2>
-            <article id="belgrano">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.281046392518!2d-58.444249384771204!3d-34.571754580467875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c0ee696ee5%3A0x16e0b641039b5e93!2sAv.%20Cabildo%20500%2C%20C1426AAR%20CABA!5e0!3m2!1ses!2sar!4v1623306421492!5m2!1ses!2sar" width="320" height="340" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <h3>Belgrano</h3>
-                <p>Av. Cabildo 500, Capital federal</p>
-            </article>
+        
         </section>
         <section id="info">
             <h2>Consejos útiles para empezar a entrenar</h2>
@@ -274,6 +273,15 @@
                 <li><a href="#post-training">Nutrición post entrenamiento</a></li>
             </ul>
         </section>
+
+        <section id="venues">
+            <h2>Nuestras sedes</h2>
+            <article id="belgrano">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.281046392518!2d-58.444249384771204!3d-34.571754580467875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c0ee696ee5%3A0x16e0b641039b5e93!2sAv.%20Cabildo%20500%2C%20C1426AAR%20CABA!5e0!3m2!1ses!2sar!4v1623306421492!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
+                <h3>Belgrano</h3>
+                <p>Av. Cabildo 500, Capital federal</p>
+            </article>
+        </section>
         <section id="contact">
             <h2>Contactanos</h2>
             <form action="">
@@ -295,21 +303,33 @@
                 </div>
                 <button class="button">Enviar</button>
             </form>
-        </section>
+            </section>
     </main>
     <footer>
-        <ul>
-            <li>Onda Fit</li>
-            <li>Sobre Nosotros</li>
-            <li>Clases</li>
-            <li>Nutricion</li>
-            <li>Sedes</li>
-            <li>Consejos</li>
-            <li>Contacto</li>
+        
+        <ul id="mapa">
+            <li><a href="#">Onda Fit</a></li>
+            <li><a href="#about">Sobre nosotros</a></li>
+            <li><a href="#class">Clases</a></li>
+            <li><a href="#nutrition">Nutrición</a></li>
+            <li><a href="#info">Consejos</a></li>
+            <li><a href="#venues">Sedes</a></li>
         </ul>
-        <div class="footer-row-2">
-            <p>&copy; Este sitio es una entrega para un <abbr title="Trabajo Práctico">TP</abbr> de la Escuela Da Vinci</p>
+        <div>
+            <ul class="redes">
+                <li><a id="ig" href="#">Instagram</a></li>
+                <li><a id="tw" href="#">Twitter</a></li>
+                <li><a id="fb" href="#">Facebook</a></li>
+            </ul>
+            <ul>
+                <li>Florencia Fernández Bugna</li>
+                <li>DWN2A</li>
+                <li>Interacción con dispositivos móviles</li>
+                <li>2021</li>
+            </ul>
         </div>
+        
+        <p>&copy; Este sitio es una entrega para un TP de la Escuela Da Vinci</p>
     </footer>
 </body>
 

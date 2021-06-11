@@ -71,10 +71,47 @@ h1 {
 }
 
 /******************************* HEADER *******************************/
+h1 {
+    background: url(./logo.png) no-repeat;
+    display: block;
+    font-size: 0;
+    width: 114px;
+    height: 74px;
+    background-position: 13px 13px;
+}
+
 header {
     width: 100%;
-    height: 13em;
-    background: no-repeat url(./1x/Recurso\ 0.png);}
+    height: 15em;
+    background: no-repeat url(./1x/banner-1.png);
+    background-position-y: 2em;
+}
+
+#nav button {
+    font-size: 0.55em;
+    margin: 0.5em 1em;
+    height: 2em;
+    width: 25%;
+    border: none;
+    background-color: #FDCA40;
+    border-radius: 1em;
+}
+
+#banner-galery {
+    width: 25%;
+    margin: -13px;
+}
+
+#header:target {
+    background-position-y: 30px;
+    background-image: url(./1x/banner-2.png);
+}
+
+}
+
+#nav a {
+    color: #2B2D42;
+}
 
 #open-close {
     position: absolute;
@@ -165,7 +202,7 @@ header {
 
 #about-galery {
     position: absolute;
-    top: 36.4em;
+    top: 38em;
 }
 
 #heart-health, #stress {
@@ -311,7 +348,7 @@ header {
 
 #nutrition-galery {
     position: absolute;
-    top: 76em;
+    top: 78em;
 }
 
 #hierro, #sodio, #potasio, #magnesio {
@@ -371,6 +408,9 @@ header {
 }
 
 /******************************* SEDES *******************************/
+#venues {
+    margin-bottom: 2em;
+}
 
 #venues h3 {
     padding: 1em;
@@ -382,10 +422,16 @@ header {
     color: #2B2D42;
 }
 
+#belgrano iframe{
+    border: 0;
+    width: 100%;
+    height: 50vh;
+}
+
 /******************************* INFO *******************************/
 
 #info {
-    height: 30em;
+    height: 29em;
 }
 
 #info h3 {
@@ -428,6 +474,7 @@ header {
 
 #info article a {
     font-size: 0.7em;
+    color: #2B2D42;
 }
 
 /* Se oculta la informacion adicional */
@@ -510,10 +557,6 @@ input {
     margin: 1em;
 }
 
-footer {
-    height: 100em;
-}
-
 #contact button {
     background-color: #FDCA40;
     color: #2B2D42;
@@ -528,4 +571,69 @@ footer {
 
 footer {
     background-color: #2B2D42;
+    color: #FF5714;
+    font-size: 0.5em;
+    padding: 2em;
+}
+
+footer li {
+    margin: 1em;
+}
+
+footer ul {
+    width: 33%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+footer div ul {
+    display: inline;
+}
+
+footer div ul:first-child li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer a {
+    color: #FF5714;
+}   
+
+#mapa li:first-child a {
+    background: url(./logo.png) no-repeat;
+    display: block;
+    font-size: 0;
+    width: 100px;
+    height: 60px;
+}
+
+footer div {
+    display: inline-block;
+    position: absolute;
+    margin: 3em;
+    width: 55%;
+}
+
+.redes {
+    display: block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+
+#ig {
+    background-image: url(./instagram-icon.png);
+}
+
+#tw {
+    background-image: url(./twitter-icon.png);
+}
+
+#fb {
+    background-image: url(./facebook-icon.png);
+}
+
+footer p {
+    font-size: 1em;
+    text-align: center;
 }
