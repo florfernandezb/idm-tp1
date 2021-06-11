@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-whidth, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Prompt:wght@300;400&display=swap"
         rel="stylesheet">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <link rel="stylesheet" href="./stylesTablet.css" media="screen and (min-width:481px) and (max-width:780px" />
+    <link rel="stylesheet" href="styles.css">
+
     <title>Florencia Fernández Bugna | DWN2A | IDM | 2021</title>
 </head>
 
@@ -21,7 +21,15 @@
     <header id="header">
         <nav id="nav">
             <h1>ONDA FIT</h1>
-            <button ><a href="#about">Ver más</a></button>
+            <article>
+                <h2>Mejorá tu calidad de vida</h2>
+                <p>Practicar algun deporte o realizar
+                    alguna actividad física aporta
+                    muchos beneficios para tu salud,
+                    tanto física como mental</p>
+                <button ><a href="#about">Ver más</a></button>
+            </article>
+            
             <ul id="banner-galery" class="galery blue-circle">    
                 <li><a href="#header">siguiente</a></li>
                 <li><a href="#">anterior</a></li>
@@ -65,7 +73,6 @@
                 <li><a href="#heart-health">Salud cardíaca</a></li>
             </ul>
         </section>
-        <section>
             <section id="class">
                 <h2>Encontrá tu clase ideal</h2>
                 <article id="crossfit">
@@ -91,10 +98,10 @@
                     <li><a href="#zumba">Zumba</a></li>
                 </ul>
             </section>
-        </section>
-        <aside id="online">
-
-        </aside>
+            <section id="video">
+                <h2>Entrenamientos online</h2>
+                <iframe src="https://www.youtube.com/embed/JnDu110SBN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
         <section id="nutrition">
             <h2>Nutrición</h2>
                 <article id="calcio" class ="blue">
@@ -123,9 +130,9 @@
                 </article>
 
             <ul id="nutrition-galery" class="galery yellow-circle">
-                <li><a href="#calcio">Crossfit</a></li>
-                <li><a href="#hierro">Functional</a></li>
-                <li><a href="#sodio">Cardio</a></li>
+                <li><a href="#calcio">Calcio</a></li>
+                <li><a href="#hierro">Hierro</a></li>
+                <li><a href="#sodio">Sodio</a></li>
                 <li><a href="#potasio">Potasio</a></li>
                 <li><a href="#magnesio">Magnesio</a></li>
             </ul>
@@ -136,8 +143,8 @@
             <h2>Consejos útiles para empezar a entrenar</h2>
             <article id="hidratacion" class="info-card">
                 <picture>
-                    <source srcset="./hidratacion-web.jpg" media="(min-width:481px)">
-                    <img src="./hidratacion-mobile.jpg" alt="">
+                    <source srcset="./recursos/hidratacion-web.jpg" media="(min-width:481px)">
+                    <img src="./recursos/hidratacion-mobile.jpg" alt="">
                 </picture>
                 <h3>Hidratación en el ejercicio</h3>
                 <p>Mantenernos hidratados constantemente es algo primordial para tener un correcto funcionamiento de nuestro organismo.</p>
@@ -158,7 +165,7 @@
             </article> 
             <article id="stretching" class="info-card">
                 <picture>
-                    <source srcset="./estiramiento-web.jpg" media="(min-width:481px)">
+                    <source srcset="./recursos/estiramiento-web.jpg" media="(min-width:481px)">
                     <img src="./estiramiento-mobile.jpg" alt="">
                 </picture>
                 <h3>Entrada en calor</h3>
@@ -180,7 +187,7 @@
             </article>
             <article id="pap" class="info-card">
                 <picture>
-                    <source srcset="./potenciacion-web.jpg" media="(min-width:481px)">
+                    <source srcset="./recursos/potenciacion-web.jpg" media="(min-width:481px)">
                     <img src="./potenciacion-mobile.jpg" alt="">
                 </picture>
                 <h3>Potencicación post activación</h3>
@@ -202,8 +209,8 @@
             </article>
             <article id="harina" class="info-card ocultar">
                 <picture>
-                    <source srcset="./harina-web.jpg" media="(min-width:481px)">
-                    <img src="./harina-mobile.jpg" alt="">
+                    <source srcset="./recursos/harina-web.png" media="(min-width:481px)">
+                    <img src="./recursos/harina-mobile.jpg" alt="">
                 </picture>
                 <h3>¿Qué pasa con las harinas?</h3>
                 <p>Generalmente cuando nos referimos a las harinas nos referimos a la harina blanca refinada y productos derivados, y generalmente ALTOS también en GRASAS: pizza, empanadas, pan blanco, galletitas, etc.</p>
@@ -224,8 +231,8 @@
             </article>
             <article id="pre-training" class="info-card">
                 <picture>
-                    <source srcset="./pre-training-web.jpg" media="(min-width:481px)">
-                    <img src="./pre-training-mobile.jpg" alt="">
+                    <source srcset="./recursos/pre-training-web.jpg" media="(min-width:481px)">
+                    <img src="./recursos/pre-training-mobile.jpg" alt="">
                 </picture>
                 <h3>Nutrición pre entrenamiento</h3>
                 <p>Los planes de alimentación en deportistas son muy variados y es importante que sean individualizados teniendo en cuenta un montón de factores propio en cada caso</p>
@@ -245,8 +252,8 @@
             </article>
             <article id="post-training" class="info-card">
                 <picture>
-                    <source srcset="./post-training-web.jpg" media="(min-width:481px)">
-                    <img src="./post-training-mobile.jpg" alt="">
+                    <source srcset="./recursos/post-training-web.jpg" media="(min-width:481px)">
+                    <img src="./recursos/post-training-mobile.jpg" alt="">
                 </picture>
                 <h3>Nutrición post entrenamiento</h3>
                 <p>Los deportes son muy variados y según las características propias de cada uno, se debe adecuar la alimentación. En cada uno es importante la frecuencia, la intensidad, el tiempo, etc. Todos estos factores son determinantes.</p>
@@ -299,9 +306,9 @@
                 </div>
                 <div class="form-item">
                     <label for="message" >Mensaje</label>
-                    <input type="text" id="msg">
+                    <textarea id="msg" name="msg"></textarea>
                 </div>
-                <button class="button">Enviar</button>
+                <input type="submit" value="Enviar" />
             </form>
             </section>
     </main>
@@ -317,9 +324,9 @@
         </ul>
         <div>
             <ul class="redes">
-                <li><a id="ig" href="#">Instagram</a></li>
-                <li><a id="tw" href="#">Twitter</a></li>
-                <li><a id="fb" href="#">Facebook</a></li>
+                <li><a id="ig" href="https://www.instagram.com/" target ="_blank">Instagram</a></li>
+                <li><a target ="_blank" id="tw" href="https://www.twitter.com/">Twitter</a></li>
+                <li><a target ="_blank" id="fb" href="https://www.facebook.com/">Facebook</a></li>
             </ul>
             <ul>
                 <li>Florencia Fernández Bugna</li>

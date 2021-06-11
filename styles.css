@@ -54,7 +54,7 @@ h1 {
     background-size: cover;
     font-size: 0;
     display: inline-block;
-    background: url(./1x/Recurso\ 6.png) no-repeat;
+    background: url(./recursos/Recurso\ 6.png) no-repeat;
 }
 
 .yellow-circle a {
@@ -63,16 +63,16 @@ h1 {
     background-size: cover;
     font-size: 0;
     display: inline-block;
-    background: url(./1x/Recurso\ 14.png) no-repeat;
+    background: url(./recursos/Recurso\ 14.png) no-repeat;
 }
 
 .yellow-circle a:hover {
-    background: url(./1x/Recurso\ 12.png) no-repeat;
+    background: url(./recursos/Recurso\ 12.png) no-repeat;
 }
 
 /******************************* HEADER *******************************/
 h1 {
-    background: url(./logo.png) no-repeat;
+    background: url(./recursos/logo.png) no-repeat;
     display: block;
     font-size: 0;
     width: 114px;
@@ -83,7 +83,7 @@ h1 {
 header {
     width: 100%;
     height: 15em;
-    background: no-repeat url(./1x/banner-1.png);
+    background: no-repeat url(./recursos/banner-1.png);
     background-position-y: 2em;
 }
 
@@ -104,13 +104,16 @@ header {
 
 #header:target {
     background-position-y: 30px;
-    background-image: url(./1x/banner-2.png);
-}
-
+    background-image: url(./recursos/banner-2.png);
 }
 
 #nav a {
     color: #2B2D42;
+}
+
+#menu a{
+    color: #F8F4F9;
+    line-height: 3em;
 }
 
 #open-close {
@@ -124,13 +127,13 @@ header {
     top: 8vh;
     right: 1em;
     padding: 1em;
-    background-color: aqua;
+    background-color: #FF5714;
     z-index: 100;
     display: none;
 }
 
 #open-close li a {
-    background: url("menuu.png") no-repeat;
+    background: url(./recursos/menu.png) no-repeat;
     background-size: cover;
     display: block;
     margin: 10px 20px;
@@ -155,6 +158,26 @@ header {
     display: block;
 }
 
+@media screen and (min-width:480px){
+    header {
+        width: 100%;
+        height: 29.4em;
+        background-image: url(./recursos/banner-1-tablet.png)
+    }
+    
+    #header:target {
+        height: 29.4em;
+        background-image: url(./recursos/banner-2-tablet.png) ;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3, p {
+        font-size: 1em;
+    }
+}
+
 /******************************* POR QUE HACER DEPORTE *******************************/
 #about {
     background-color: #FDCA40;
@@ -164,7 +187,7 @@ header {
 
 #sleep h3 {
     margin: auto;
-    background: url(./1x/Recurso\ 1.png) no-repeat;
+    background: url(./recursos/Recurso\ 1.png) no-repeat;
     background-position: 50% 110%;
     border-top: 13em solid transparent;
 }
@@ -188,14 +211,14 @@ header {
 
 #stress h3 {
     margin: auto;
-    background: url(./1x/Recurso\ 2.png) no-repeat;
+    background: url(./recursos/Recurso\ 2.png) no-repeat;
     background-position: 50% 125%;
     border-top: 16em solid transparent;
 }
 
 #heart-health h3 {
     margin: auto;
-    background: url(./1x/Recurso\ 3.png) no-repeat;
+    background: url(./recursos/Recurso\ 3.png) no-repeat;
     background-position: 50% 125%;
     border-top: 15em solid transparent;
 }
@@ -214,7 +237,60 @@ header {
 }
 
 .blue-circle a:hover {
-    background: no-repeat url(./1x/Recurso\ 5.png);
+    background: no-repeat url(./recursos/Recurso\ 5.png);
+}
+
+@media screen and (min-width:481px){
+    #about article {
+        width: 32%;
+        left: 1.5%;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #about article p {
+        width: 81%;
+    }
+    
+    #stress, #heart-health {
+        display: block;
+    }
+    
+    #about-galery {
+        display: none;
+    }
+
+    #about p, #about h3 {
+        font-size: 0.75em;
+    }
+
+    #nav article {
+        width: 48%;
+    }
+
+    #nav article p {
+        width: 70%;
+        margin-left: 2em;
+        margin-top: -1.5em;
+    }
+
+    #nav button {
+        margin-left: 3.5em;
+    }
+    
+    .blue-circle a {
+        width: 22px;
+        height: 22px;
+        background-image: url(./recursos/Recurso\ 13-tablet.png);
+    }
+
+    .blue-circle a:hover {
+        background-image: url(./recursos/Recurso\ 12-tablet.png);
+    }
+
+    #banner-galery {
+        width: 19%;
+    }
 }
 
 /******************************* CLASES *******************************/
@@ -258,18 +334,18 @@ header {
 }
 
 #crossfit {
-    background-image: url(./1x/Recurso\ 7.jpg);
+    background-image: url(./recursos/Recurso\ 7.jpg);
 }
 
 #functional {
-    background-image: url(./1x/Recurso\ 8.jpg);
+    background-image: url(./recursos/Recurso\ 8.jpg);
 }
 
 #cardio {
-    background-image: url(./1x/Recurso\ 9.png);
+    background-image: url(./recursos/Recurso\ 9.png);
 }
 #zumba {
-    background-image: url(./1x/Recurso\ 10.jpg);
+    background-image: url(./recursos/Recurso\ 10.jpg);
 }
 
 #functional, #cardio, #zumba {
@@ -283,6 +359,71 @@ header {
 #class-galery {
     position: absolute;
     top: 61em;
+}
+
+#video iframe {
+    border: 0;
+    width: 100%;
+    height: 56.25vw;
+}
+
+@media screen and (min-width:481px) {
+
+    #functional, #crossfit {
+        display: block;
+        background-repeat: no-repeat;
+    }
+
+    #crossfit {
+        background-image: url(./recursos/crossfit-tablet.png);
+    }
+
+    #functional {
+        background-image: url(./recursos/functional-tablet.png);
+    }
+
+    #cardio {
+        background-image: url(./recursos/cardio-tablet.png);
+    }
+    #zumba {
+        background-image: url(./recursos/Zumba-4-tablet.png);
+    } 
+    #class {
+        height: 33em;
+        text-align: center;
+    }
+
+    #class article {
+        position: relative;
+        width: 40%;
+        height: 26em;
+    }
+
+    #zumba, #cardio {
+        display: none;
+    }
+
+    #crossfit, #functional {
+        display: inline-block;
+    }
+
+    #class-galery li:nth-child(even){
+        display: inline-block;
+    }
+    #class-galery li:nth-child(odd){
+        display: none;
+    }
+
+    #class-galery a {
+        width: 30;
+        height: 20px;
+        font-size: 0;
+        padding: 1em;
+        background-size: cover;
+        display: inline-block;
+        background: url(./recursos/Recurso4-tablet.png) no-repeat;
+    }
+
 }
 
 /******************************* NUTRICION *******************************/
@@ -318,7 +459,7 @@ header {
     height: 10em;
     width: 80%;
     margin-left: 1.5em;
-    background: url(./1x/Recurso\ 11.png) no-repeat;
+    background: url(./recursos/Recurso\ 11.png) no-repeat;
     border-top: 2em solid transparent;
 }
 
@@ -331,7 +472,7 @@ header {
 #hierro h3{
     height: 9em;
     width: 90%;
-    background: url(./1x/Recurso\ 13.png) no-repeat right;
+    background: url(./recursos/Recurso\ 13.png) no-repeat right;
     border-top: 2em solid transparent;
     border-right: 1.5em solid transparent;
     text-align: left;
@@ -348,7 +489,7 @@ header {
 
 #nutrition-galery {
     position: absolute;
-    top: 78em;
+    top: 91.8em;
 }
 
 #hierro, #sodio, #potasio, #magnesio {
@@ -363,7 +504,7 @@ header {
     line-height: 4em;
     height: 9em;
     margin-left: 1.5em;
-    background: url(./1x/Recurso\ 15.png) no-repeat left;
+    background: url(./recursos/Recurso\ 15.png) no-repeat left;
     border-top: 2em solid transparent;
 }
 
@@ -378,7 +519,7 @@ header {
     height: 9em;
     width: 90%;
     margin-left: 2.3em;
-    background: url(./1x/Recurso\ 16.png) no-repeat right;
+    background: url(./recursos/Recurso\ 16.png) no-repeat right;
     border-top: 2em solid transparent;
     border-right: 1.1em solid transparent;
     text-align: left;
@@ -396,7 +537,7 @@ header {
     line-height: 5em;
     height: 10em;
     margin-left: 1.5em;
-    background: url(./1x/Recurso\ 17.png) no-repeat left;
+    background: url(./recursos/Recurso\ 17.png) no-repeat left;
     border-top: 1em solid transparent;
 }
 
@@ -405,6 +546,90 @@ header {
     top: 4.5em;
     left: 40%;
     width: 53%;
+}
+
+@media screen and (min-width:481px) {
+    #nutrition {
+        height: 17em;
+    }
+
+    #nutrition article {
+        width: 75%;
+        height: 9em;
+        border-radius: 1em;
+        position: absolute;
+        left: 15%;
+    }
+
+    #nutrition p, #nutrition h3 {
+        font-size: 1em;
+    }
+
+    #calcio h3 {
+        height: 10em;
+        line-height: 3em;
+        width: 68%;
+        font-size: 1em;
+        background: url(./recursos/Recurso\ 6-tablet.png) no-repeat;
+        border-top: 1em solid transparent;
+        border-left: 1em solid transparent;
+    }
+
+    #calcio p {
+        position: absolute;
+        font-size: 1em;
+        top: 3.5em;
+        left: 34%;
+        width: 53%;
+    }
+
+    #nutrition-galery {
+        top: 114.9em;
+    }
+
+    #hierro h3 {
+        height: 10em;
+        width: 84%;
+        line-height: 5em;
+        border-top: 0.5em solid transparent;
+        border-right: 2em solid transparent;
+        margin-left: 5em;
+        background: url(./recursos/Recurso\ 7-tablet.png.) no-repeat right;
+    }
+    
+    #hierro p, #potasio p {
+        top: 4em;
+        left: 14%;
+        width: 53%;
+    }
+
+    #sodio h3 {
+        background: url(./recursos/Recurso\ 8-tablet.png.) no-repeat;
+        border-top: 1em solid transparent;
+        margin-left: 3.7em;    
+    }
+
+    #sodio p {
+        position: absolute;
+        left: 50%;
+    }
+
+    #potasio h3 {
+        background: url(./recursos/Recurso\ 9-tablet.png.) no-repeat right;
+        height: 10em;
+        border-top: 0;
+        border-right: 3em solid transparent;
+        line-height: 6em;
+        margin-left: 5em;
+    }
+
+    #magnesio h3 {
+        width: 70%;
+        margin-left: 5em;
+        border-bottom: 2em solid transparent;
+        background: url(./recursos/Recurso\ 10-tablet.png.) no-repeat left;
+    }
+
 }
 
 /******************************* SEDES *******************************/
@@ -425,7 +650,17 @@ header {
 #belgrano iframe{
     border: 0;
     width: 100%;
-    height: 50vh;
+    height: 56.25vw;
+}
+
+@media screen and (min-width:481px) {
+    #venues {
+        margin-top: 16em;
+    }
+
+    #venues p, #venues h3 {
+        font-size: 1em;
+    }
 }
 
 /******************************* INFO *******************************/
@@ -528,6 +763,22 @@ header {
     display: block;
 }
 
+@media screen and (min-width:481px) {
+    #info p, #info li, #info h3 {
+        margin: auto;
+        font-size: 1em;
+        width: 70%;
+    }
+
+    #info img {
+        padding: 2em;
+    }
+
+    #info picture {
+        margin: 5em;
+    }
+}
+
 /******************************* FORM *******************************/
 
 #contact {
@@ -550,14 +801,16 @@ input {
 }
 
 #msg {
+    width: 100%;
     height: 10em;
+    border-radius: 1em;
 }
 
 .form-item {
     margin: 1em;
 }
 
-#contact button {
+input[type="submit"] {
     background-color: #FDCA40;
     color: #2B2D42;
     margin-left: 6.5em; 
@@ -565,6 +818,18 @@ input {
     width: 50%;
     height: 2em;
     border-radius: 1em;
+}
+
+@media screen and (min-width:481px) {
+    form {
+        width: 80%;
+        margin: auto;
+    }
+    input[type="submit"] {
+        display: block;
+        width: 30%;
+        margin: auto;
+    }
 }
 
 /******************************* FOOTER *******************************/
@@ -600,7 +865,7 @@ footer a {
 }   
 
 #mapa li:first-child a {
-    background: url(./logo.png) no-repeat;
+    background: url(./recursos/logo.png) no-repeat;
     display: block;
     font-size: 0;
     width: 100px;
@@ -622,18 +887,62 @@ footer div {
 }
 
 #ig {
-    background-image: url(./instagram-icon.png);
+    background-image: url(./recursos/instagram-icon.png);
 }
 
 #tw {
-    background-image: url(./twitter-icon.png);
+    background-image: url(./recursos/twitter-icon.png);
 }
 
 #fb {
-    background-image: url(./facebook-icon.png);
+    background-image: url(./recursos/facebook-icon.png);
 }
 
 footer p {
     font-size: 1em;
     text-align: center;
+}
+
+@media screen and (min-width:481px) {
+    
+    footer {
+        font-size: 0.75em;
+    }
+
+    footer div {
+        margin: 0;
+        width: 33%;
+        margin-top: 2em;
+    }
+
+    footer ul {
+        margin: auto;
+    }
+
+    #mapa {
+        margin-left: 16%;
+    }
+
+    #mapa li:first-child a {
+        background: url(./recursos/Recurso\ 11-web.png) no-repeat;
+        width: 120px;
+        height: 74px;
+    }
+
+    .redes a {
+        width: 50px;
+        height: 50px;
+    }
+
+    #ig {
+        background-image: url(./recursos/instagram-icon-web.png);
+    }
+    
+    #tw {
+        background-image: url(./recursos/twitter-icon-web.png);
+    }
+    
+    #fb {
+        background-image: url(./recursos/facebook-icon-web.png);
+    }
 }

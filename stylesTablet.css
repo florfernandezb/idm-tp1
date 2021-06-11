@@ -1,0 +1,88 @@
+header {
+    width: 100%;
+    height: 27.4em;
+    background-image: url(./recursos/banner-1-tablet.png)
+}
+
+header:target {
+    height: 29.4em;
+    background-image: url(./recursos/banner-2-tablet.png) ;
+}
+
+/******************************* ABOUT *******************************/
+
+#about article {
+    width: 32%;
+    left: 1.5%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#stress, #heart-health {
+    display: block;
+}
+
+.galrey {
+    display: none;
+}
+
+/******************************* CLASS *******************************/
+
+#functional, #crossfit {
+    display: block;
+    background-repeat: no-repeat;
+}
+
+
+#crossfit {
+    background-image: url(./recursos/crossfit-tablet.png);
+}
+
+#functional {
+    background-image: url(./recursos/functional-tablet.png);
+}
+
+#cardio {
+    background-image: url(./recursos/cardio-tablet.png);
+}
+#zumba {
+    background-image: url(./recursos/Zumba-4-tablet.png);
+} 
+#class {
+    height: 33em;
+    text-align: center;
+}
+
+#class article {
+    position: relative;
+    width: 40%;
+    height: 26em;
+}
+
+#zumba, #cardio {
+    display: none;
+}
+
+#crossfit, #functional {
+    display: inline-block;
+}
+
+#class-galery li:nth-child(even){
+    display: inline-block;
+}
+#class-galery li:nth-child(odd){
+    display: none;
+}
+
+#class-galery a {
+    width: 30;
+    height: 20px;
+    font-size: 0;
+    padding: 1em;
+    background-size: cover;
+    display: inline-block;
+    background: url(./recursos/Recurso4-tablet.png) no-repeat;
+}
+
+
